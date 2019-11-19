@@ -2,15 +2,15 @@
   "items" : [
     {
       "img": "https://lionheartrescue.github.io/newbestfriend/img/bella.jpg",
-      "alt" : "Owl Image 1"
+      "alt" : "bella"
     },
     {
-      "img": "https://lionheartrescue.github.io/newbestfriend/img/bella.jpg",
-      "alt" : "Owl Image 2"
+      "img": "https://lionheartrescue.github.io/newbestfriend/img/canela.jpg",
+      "alt" : "canela"
     },
     {
-      "img": "https://lionheartrescue.github.io/newbestfriend/img/bella.jpg",
-      "alt" : "Owl Image 1"
+      "img": "https://lionheartrescue.github.io/newbestfriend/img/charlie.jpg",
+      "alt" : "charlie"
     }
   ]
 }
