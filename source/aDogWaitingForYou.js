@@ -18,3 +18,8 @@ $(document).ready(function() {
   }
  
 });
+
+// $(document).ready(function () {  
+//     $('#owl-demo').html('1')
+
+//     });
