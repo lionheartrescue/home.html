@@ -1,7 +1,7 @@
 {
   "items" : [
     {
-      "img": "https://lionheartrescue.github.io/newbestfriend/img/bella.jpg",
+      "img": "https://lionheartrescue.github.io/newbestfriend/img/bella.jpg" ,
       "alt" : "bella"
     },
     {
@@ -21,48 +21,45 @@
       "alt" : "ferny"
     },
      {
-      "img": "https://lionheartrescue.github.io/newbestfriend/img/canela.jpg",
-      "alt" : "canela"
+      "img": "https://lionheartrescue.github.io/newbestfriend/img/fifi.jpg",
+      "alt" : "fifi"
     },
      {
-      "img": "https://lionheartrescue.github.io/newbestfriend/img/canela.jpg",
-      "alt" : "canela"
+      "img": "https://lionheartrescue.github.io/newbestfriend/img/goliath.jpg",
+      "alt" : "goliath"
     },
      {
-      "img": "https://lionheartrescue.github.io/newbestfriend/img/canela.jpg",
-      "alt" : "canela"
+      "img": "https://lionheartrescue.github.io/newbestfriend/img/ivy.jpg",
+      "alt" : "ivy"
     },
      {
-      "img": "https://lionheartrescue.github.io/newbestfriend/img/canela.jpg",
-      "alt" : "canela"
+      "img": "https://lionheartrescue.github.io/newbestfriend/img/lucy.jpg",
+      "alt" : "lucy"
     },
      {
-      "img": "https://lionheartrescue.github.io/newbestfriend/img/canela.jpg",
-      "alt" : "canela"
+      "img": "https://lionheartrescue.github.io/newbestfriend/img/mayo.jpg",
+      "alt" : "mayo"
     },
      {
-      "img": "https://lionheartrescue.github.io/newbestfriend/img/canela.jpg",
-      "alt" : "canela"
+      "img": "https://lionheartrescue.github.io/newbestfriend/img/obi_wan_kenobi.jpg",
+      "alt" : "obi_wan_kenobi"
     },
      {
-      "img": "https://lionheartrescue.github.io/newbestfriend/img/canela.jpg",
-      "alt" : "canela"
+      "img": "https://lionheartrescue.github.io/newbestfriend/img/ringo.jpg",
+      "alt" : "ringo"
     },
      {
-      "img": "https://lionheartrescue.github.io/newbestfriend/img/canela.jpg",
-      "alt" : "canela"
+      "img": "https://lionheartrescue.github.io/newbestfriend/img/simon.jpg",
+      "alt" : "simon"
     },
      {
-      "img": "https://lionheartrescue.github.io/newbestfriend/img/canela.jpg",
-      "alt" : "canela"
+      "img": "https://lionheartrescue.github.io/newbestfriend/img/toby.jpg",
+      "alt" : "toby"
     },
      {
-      "img": "https://lionheartrescue.github.io/newbestfriend/img/canela.jpg",
-      "alt" : "canela"
-    },
-     {
-      "img": "https://lionheartrescue.github.io/newbestfriend/img/canela.jpg",
-      "alt" : "canela"
-    },
+      "img": "https://lionheartrescue.github.io/newbestfriend/img/zenni.jpg",
+      "alt" : "zenni"
+    }
+     
   ]
 }
