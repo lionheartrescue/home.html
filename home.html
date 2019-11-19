@@ -2,7 +2,6 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>LionHeart Rescue </title>
- 
 </head>
 <body>
 
@@ -12,29 +11,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-</head>
+ </head>
 <body>
 
-<style type="text/css">
-  
-  .carousel-caption {color:black;}
-  .carousel-indicators li {border:1px solid black;}
-
-/* .carousel-inner > .item > img,
- .carousel-inner > .item > a > img {
-     display: block;
-     max-width: auto;
-     height: auto !important;
- }*/
-
- #myCarousel{}
- .capt{background-color: white}
-
-
-</style>
 
 <div class="container">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -43,22 +22,26 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"> </li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+         <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+               <li data-target="#myCarousel" data-slide-to="5"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
 
       <div class="item active">
-     
+    
         <img src="./img/bella.jpg" alt="Bella" style="width:100%;">
         <div class="carousel-caption">
           <h3><span class="capt">Bella</span></h3>
           <p></p>
-    
+ 
       </div>
       </div>
 
       <div class="item">
+          <span id="append"></span>
          <img src="./img/canela.jpg" alt="Canela" style="width:100%;">
         <div class="carousel-caption">
           <h3><span class="capt">Canela</span></h3>
@@ -73,7 +56,30 @@
           <p></p>
         </div>
       </div>
+
+       <div class="item">
+       <img src="./img/chula.jpg" alt="Chula" style="width:100%;">
+        <div class="carousel-caption">
+          <h3><span class="capt">Chula</span></h3>
+          <p></p>
+        </div>
+      </div>
+
+        <div class="item">
+       <img src="./img/ferny.jpg" alt="ferny" style="width:100%;">
+        <div class="carousel-caption">
+          <h3><span class="capt">Ferny</span></h3>
+          <p></p>
+        </div>
+      </div>
   
+        <div class="item">
+       <img src="./img/fifi.jpg" alt="fifi" style="width:100%;">
+        <div class="carousel-caption">
+          <h3><span class="capt">Fifi</span></h3>
+          <p></p>
+        </div>
+      </div>
     </div>
 
     <!-- Left and right controls -->
@@ -112,63 +118,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-  
-<style>
-  .container{height: 30%;width:320px;padding:5%;margin:5%;}
-  /*img{height:175px;width:200}*/
-   img{height:30%;width:100%}
+   <script src="./source/thisIsYourNewBestFriend.js"></script>
+ <link rel="stylesheet" href="./source/justAnotherDogLookingForAFriendLikeYou.css">
 
   
-  a:hover
-  {text-decoration: underline;}
-
-  #blink a{color:#5c1a78;}
-  #Copyright a{color:#5c1a78;}
-
-  .footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color:#0caded;
-   padding:1%;
-}
-#linkList {margin-left:1%;margin-top:1%;float:left;}
-#bLink {margin-left:10%;float: left;}
-
-#Copyright{margin-right:10%;float: right;}
-</style>
-
-<script type="text/javascript">
-
-     var baseUrl = "https://lionheartrescue.github.io/newbestfriend/img/";
-        var dogPictures = ["bella.jpg","canela.jpg","charlie.jpg","chula.jpg",]
-var iO = "<img src='" ;
-var iC = "'></img>";
-  //iO + baseUrl + dogPictures[0] +iC
-
-  var bLink = [{"link":"<a href ='https://lionheartrescue.github.io/newbestfriend/img/newbestfriend.html'>Home</a>"},{"link":"<a href='https://www.facebook.com'>Facebook</a>"}]
-
-
-//content loaders
-
-//top carosel
-$(document).ready(function () {  
-    $('#zero').append("")
-
-    });
-
-
-//bottom links
-console.log(bLink.length)
-
-$(document).ready(function () {  
-for (var i = 0 ; i < bLink.length; i++) {
-  $('#bLink').append("<div id='linkList'>" + bLink[i].link + " </div>")
-}
-   $('#bLink').append("<br>")
-
-    });
-
-
-</script>

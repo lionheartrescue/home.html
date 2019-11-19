@@ -1,0 +1,39 @@
+.container{height: 30%;width:320px;padding:5%;margin:5%;}
+  /*img{height:175px;width:200}*/
+   img{height:30%;width:100%}
+
+  a:hover
+  {text-decoration: underline;}
+
+  #blink a{color:#5c1a78;}
+  #Copyright a{color:#5c1a78;}
+
+  .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#0caded;
+   padding:1%;
+}
+
+#linkList {margin-left:1%;margin-top:1%;float:left;}
+#bLink {margin-left:10%;float: left;}
+
+#Copyright{margin-right:10%;float: right;}
+
+.capt{color:black;background-color: white;}
+
+
+  
+  .carousel-caption {color:black;}
+  .carousel-indicators li {border:1px solid black;}
+
+/* .carousel-inner > .item > img,
+ .carousel-inner > .item > a > img {
+     display: block;
+     max-width: auto;
+     height: auto !important;
+ }*/
+
+ #myCarousel{}
