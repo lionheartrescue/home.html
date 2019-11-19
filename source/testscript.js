@@ -27,18 +27,15 @@ $(document).ready(function () {
 var x = 0;
 
 function slide(){
-   $("#slideshow").fadeIn(1000);
+   fadeIn();
     $('#slideshow').html(friends[x].image);
 
-        if (x =< friends.length){
+        if (x < friends.length){
           x++;
-        setTimeout(slide, 2000)
-
-        fade();
+                
       }
         
   }
 
-function fade(){
- $("#slideshow").fadeOut(1000);
-}
+
+//https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/
