@@ -108,6 +108,14 @@ function incMe() {
             z++;     document.getElementById('otherScoreEval').value = z;
 }}
 
+function decMe() {
+   if (x < 0){
+          x--;     document.getElementById('playScoreEval').value = x;
+           y--;     document.getElementById('dealScoreEval').value = y;
+            z--;     document.getElementById('otherScoreEval').value = z;
+}
+
+}
 
 
 
@@ -125,7 +133,8 @@ $('#leftmove').click(function () {
 
 $(document).ready(function () {  
 $('#rightmove').click(function () {
- rightmove();
+decMe();
+slide();
 
     });
  });
