@@ -72,7 +72,12 @@ $(document).ready(function () {
 var x = 0;
 var y = 1;
 var z = 2;
+
+//<img src="img_avatar.png" alt="Avatar" class="image" style="opacity:0.3">
+var aa = '<img src="'
+var ab = '" '
 var iO = "<img src='"
+var iOF ='style="opacity:0.3"'
 var iC = "'</img>"
 var bestfriendlength = friends.length -1;
 
@@ -81,7 +86,7 @@ function slide(){
   // for (var i = 0; i > 3; i++) {
     
    
-   $('#slideshow').html(iO + friends[x].img + iC   + iO + friends[y].img + iC + iO + friends[z].img + iC );
+   $('#slideshow').html(aa + friends[x].img + ab + iOF +  iC   + iO + friends[y].img + iC + iO + friends[z].img + iC );
 
 incMe()
 setTimeout(function(){slide()}, 3000);
