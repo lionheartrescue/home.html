@@ -10,6 +10,15 @@ $(document).ready(function ()
 
                                   var x = 0;
 
+                               setTimeout(function(){ slide() }, 1000);
+                     
+                              });
+            });
+
+
+
+
+
 function slide(){
   
      $("#owl-demo").html("<img src=\"" +data["items"][x].img+ "\" alt=\"" +data["items"][x].alt+ "\">");
@@ -19,15 +28,6 @@ function slide(){
               x++;      
              }
   }
-
-                               setTimeout(function(){ slide() }, 1000);
-                     
-                              });
-            });
-
-
-
-
 
 
 
