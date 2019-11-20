@@ -27,12 +27,12 @@ $(document).ready(function () {
 var x = 0;
 
 function slide(){
-   fadeIn();
+  
     $('#slideshow').html(friends[x].image);
 
         if (x < friends.length){
           x++;
-                
+                 setTimeout(function(){ slide()}, 3000);
       }
         
   }

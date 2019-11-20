@@ -1,22 +1,20 @@
 $(document).ready(function ()  
-            {
-                    $.ajax
-                        ({
-                    method: "GET",
-                    url: " https://lionheartrescue.github.io/newbestfriend/bestFriendFinder.json"
-                         }).done(function(data) 
-
-                               {
-
-                                  var x = 0;
-
-                               setTimeout(function(){ slide() }, 1000);
-                     
+  {
+   $.ajax
+    ({
+      method: "GET",
+      url: " https://lionheartrescue.github.io/newbestfriend/bestFriendFinder.json"
+      }).done(function(data) 
+        { var x = 0;
+     $("#owl-demo").html("<img src=\"" +data["items"][x].img+ "\" alt=\"" +data["items"][x].alt+ "\">");
+     
                               });
             });
 
 
-
+    // var x = 0;
+    //    setTimeout(function(){ slide() }, 1000);
+                     
 
 
 function slide(){
