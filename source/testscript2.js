@@ -1,5 +1,10 @@
 
-const friends = [{
+const friends = [
+    {
+      "img": "https://lionheartrescue.github.io/newbestfriend/img/zenni.jpg",
+      "alt" : "zenni"
+    },
+    {
       "img": "https://lionheartrescue.github.io/newbestfriend/img/bella.jpg" ,
       "alt" : "bella"
     },
@@ -58,6 +63,10 @@ const friends = [{
      {
       "img": "https://lionheartrescue.github.io/newbestfriend/img/zenni.jpg",
       "alt" : "zenni"
+    },
+     {
+      "img": "https://lionheartrescue.github.io/newbestfriend/img/bella.jpg",
+      "alt" : "bella"
     }
      ]
 ;
@@ -65,7 +74,8 @@ const friends = [{
 
 //on page load
 $(document).ready(function () {  
-  slide();
+
+slide();
     });
 // end on page load
 
@@ -77,7 +87,8 @@ var z = 2;
 var aa = '<img src="'
 var ab = '" '
 var iO = "<img src='"
-var iOF ='style="opacity:0.3"'
+var iOF ='style="opacity:0.6"'
+var iOF2 = 'style="opacity:0.8"'
 var iC = "'</img>"
 var bestfriendlength = friends.length -1;
 
@@ -86,12 +97,13 @@ function slide(){
   // for (var i = 0; i > 3; i++) {
     
    
-   $('#slideshow').html(aa + friends[x].img + ab + iOF +  iC   + iO + friends[y].img + iC + iO + friends[z].img + iC );
+   $('#slideshow').html(aa + friends[x].img + ab + iOF +  iC   + iO + friends[y].img + iC + aa + friends[z].img + ab + iOF2 +  iC );
 
 incMe()
 setTimeout(function(){slide()}, 3000);
   // }
       }
+
 
 
 
