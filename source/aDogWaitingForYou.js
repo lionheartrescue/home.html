@@ -2,7 +2,7 @@ $(document).ready(function ()
   {
     getter();
             });
-
+var x = 0;
 
 function getter() {
      $.ajax
@@ -10,17 +10,19 @@ function getter() {
       method: "GET",
       url: " https://lionheartrescue.github.io/newbestfriend/bestFriendFinder.json"
       }).done(function(data) 
-        { var x = 0;
-          function glide (){
+        { 
+        
      $("#owl-demo").html("<img src=\"" +data["items"][x].img+ "\" alt=\"" +data["items"][x].alt+ "\">");
-      if (x < items.length){
-          x++;
-                 setTimeout(function(){ slide()}, 3000);
-      }
-    }
-      glide()
+   
+  
+    
+      
                               });
+
+
 }
+
+
 
     // var x = 0;
     //    setTimeout(function(){ slide() }, 1000);
