@@ -77,25 +77,32 @@ function slide(){
   
     $('#slideshow').html(iO + friends[x].img + iC);
 
-        if (x < bestfriendlength){
-          x++;     document.getElementById('playScoreEval').value = x;
-                 setTimeout(function(){ slide()}, 3000);
-       } else if (x == bestfriendlength){ 
-     zeroOut();
-         }
+        // loopMe();
+        runOnce();
 
       }
+
+function runOnce(){
+   if (x < friends.length){
+          x++;     document.getElementById('playScoreEval').value = x;
+                 setTimeout(function(){ slide()}, 3000);
+       } 
+}
+
+
 
 function zeroOut(){
   // x+= -friends.length;
     x+= -bestfriendlength;
             document.getElementById('playScoreEval').value = x;
           setTimeout(function(){ slide()}, 3000);
-        
-
 }
 
- // x+= +cardDeck[roll].eval;        
- //          document.getElementById('playScoreEval').value = x;
-
-//https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/
+function loopMe (){
+    if (x < bestfriendlength){
+          x++;     document.getElementById('playScoreEval').value = x;
+                 setTimeout(function(){ slide()}, 3000);
+       } else if (x == bestfriendlength){ 
+     zeroOut();
+         }
+}
