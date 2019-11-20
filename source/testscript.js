@@ -72,21 +72,30 @@ $(document).ready(function () {
 var x = 0;
 var iO = "<img src='"
 var iC = "'</img>"
+var bestfriendlength = friends.length -1;
 function slide(){
   
     $('#slideshow').html(iO + friends[x].img + iC);
 
-        if (x < friends.length){
-          x++;
+        if (x < bestfriendlength){
+          x++;     document.getElementById('playScoreEval').value = x;
                  setTimeout(function(){ slide()}, 3000);
-       } else if (x = friends.length){ 
-       x+= -15;
-          setTimeout(function(){ slide()}, 3000);
-        
+       } else if (x == bestfriendlength){ 
+     zeroOut();
          }
-      console.log(friends.length)
-         console.log(x)
+
       }
 
+function zeroOut(){
+  // x+= -friends.length;
+    x+= -bestfriendlength;
+            document.getElementById('playScoreEval').value = x;
+          setTimeout(function(){ slide()}, 3000);
+        
+
+}
+
+ // x+= +cardDeck[roll].eval;        
+ //          document.getElementById('playScoreEval').value = x;
 
 //https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/
