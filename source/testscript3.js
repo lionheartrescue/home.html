@@ -109,7 +109,7 @@ function incMe() {
 }}
 
 function decMe() {
-   if (x < 0){
+   if (x > 0){
           x--;     document.getElementById('playScoreEval').value = x;
            y--;     document.getElementById('dealScoreEval').value = y;
             z--;     document.getElementById('otherScoreEval').value = z;
