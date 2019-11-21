@@ -22,18 +22,27 @@
 
 #Copyright{margin-right:10%;float: right;}
 
-.capt{color:black;background-color: white;}
+.capt{color:black;background-color: white;
+ bottom: -20px;}
 
 
   
-  .carousel-caption {color:black;}
-  .carousel-indicators li {border:1px solid black;}
+  .carousel-caption {color:black;bottom: -40px}
+ 
 
-/* .carousel-inner > .item > img,
- .carousel-inner > .item > a > img {
-     display: block;
-     max-width: auto;
-     height: auto !important;
- }*/
 
- #myCarousel{}
+.carousel-item {
+    height: 350px;
+}
+
+.carousel-indicators li {
+  border:1px solid black;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.carousel-indicators {
+    bottom: -50px;
+    color:black;
+}
+

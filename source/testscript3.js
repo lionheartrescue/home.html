@@ -75,7 +75,7 @@ const friends = [
 //on page load
 $(document).ready(function () {  
 
-slide();
+autoslide();
     });
 // end on page load
 
@@ -99,9 +99,29 @@ function slide(){
       }
 
 
+function autoslide(){
+
+  // for (var i = 0; i > 3; i++) {
+    
+   
+   $('#slideshow').html(aa + friends[x].img + ab + iOF +  iC   + iO + friends[y].img + iC + aa + friends[z].img + ab + iOF2 +  iC );
+
+incMe()
+setTimeout(function(){autoslide()}, 3000);
+  // }
+      }
+
 
 
 function incMe() {
+  if (x < friends.length){
+          x++;     document.getElementById('playScoreEval').value = x;
+           y++;     document.getElementById('dealScoreEval').value = y;
+            z++;     document.getElementById('otherScoreEval').value = z;
+}}
+
+
+function incMe2() {
   if (x < friends.length){
           x++;     document.getElementById('playScoreEval').value = x;
            y++;     document.getElementById('dealScoreEval').value = y;
@@ -116,24 +136,35 @@ function decMe() {
 }
 
 }
+function decMe2() {
+   if (x > 0  && x < friends.length){
+          x--;     document.getElementById('playScoreEval').value = x;
+           y--;     document.getElementById('dealScoreEval').value = y;
+            z--;     document.getElementById('otherScoreEval').value = z;
+}
+
+}
+
+
 
 
 
 ///left and right buttons
 
+/// <
 $(document).ready(function () {  
 $('#leftmove').click(function () {
-   incMe();
+   incMe2();
    slide();
 
 
     });
  });
 
-
+// >
 $(document).ready(function () {  
 $('#rightmove').click(function () {
-decMe();
+decMe2();
 slide();
 
     });
