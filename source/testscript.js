@@ -65,15 +65,28 @@ const friends = [{
 
 //on page load
 $(document).ready(function () {  
-  slide();
+  autoslide();
     });
 // end on page load
+
+// autoslide();
+//function slide(){
+   // $('#slideshow').html(aa + friends[x].img + ab + iOF +  iC   + iO + friends[y].img + iC + aa + friends[z].img + ab + iOF2 +  iC );
+   //    }
+
+
+   function incMe2() {
+  if (x < friends.length){
+          x++;     document.getElementById('playScoreEval').value = x;
+           // y++;     document.getElementById('dealScoreEval').value = y;
+           //  z++;     document.getElementById('otherScoreEval').value = z;
+}}
 
 var x = 0;
 var iO = "<img src='"
 var iC = "'</img>"
 var bestfriendlength = friends.length -1;
-function slide(){
+function autoslide(){
   
     $('#slideshow').html(iO + friends[x].img + iC);
 
@@ -81,6 +94,37 @@ function slide(){
         runOnce();
 
       }
+
+function slide(){
+  
+    $('#slideshow').html(iO + friends[x].img + iC);
+
+        // loopMe();
+        // runOnce();
+
+      }
+
+
+
+///left and right buttons
+
+/// <
+$(document).ready(function () {  
+$('#leftmove').click(function () {
+   incMe2();
+   slide();
+
+
+    });
+ });
+
+
+////////
+
+
+
+
+
 
 function runOnce(){
    if (x < friends.length){
