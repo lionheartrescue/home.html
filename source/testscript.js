@@ -74,22 +74,17 @@ $(document).ready(function () {
    // $('#slideshow').html(aa + friends[x].img + ab + iOF +  iC   + iO + friends[y].img + iC + aa + friends[z].img + ab + iOF2 +  iC );
    //    }
 
-
-   function incMe2() {
+//<
+function incMe2() {
   if (x < friends.length){
           x++;     document.getElementById('playScoreEval').value = x;
-           // y++;     document.getElementById('dealScoreEval').value = y;
-           //  z++;     document.getElementById('otherScoreEval').value = z;
 }}
 
+//>
 function decMe2() {
-   if (x > 0  && x < friends.length){
+   if (x > 0){
           x--;     document.getElementById('playScoreEval').value = x;
-           // y--;     document.getElementById('dealScoreEval').value = y;
-           //  z--;     document.getElementById('otherScoreEval').value = z;
-}
-
-}
+}}
 
 var x = 0;
 var iO = "<img src='"
@@ -119,21 +114,21 @@ function slide(){
 
 ///left and right buttons
 
-/// <
+/// <  adds to value
 $(document).ready(function () {  
 $('#leftmove').click(function () {
-   incMe2();
-   slide();
+   if (x < friends.length){incMe2();
+   slide();}
 
 
     });
  });
 
-// >
+// >  subtracts from value
 $(document).ready(function () {  
 $('#rightmove').click(function () {
-decMe2();
-slide();
+ if (x > 0 ){decMe2();
+slide();}
 
     });
  });
