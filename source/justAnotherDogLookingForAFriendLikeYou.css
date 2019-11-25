@@ -1,0 +1,47 @@
+
+
+  a:hover
+  {text-decoration: underline;}
+
+  #blink a{color:#5c1a78;}
+  #Copyright a{color:#5c1a78;}
+
+  .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#0caded;
+   padding:1%;
+}
+
+
+.circle {
+    border-radius: 50%;
+}
+
+.type1 {
+    width: 150px;
+    height: 150px;
+    background: #0caded;
+    border: 1px solid white;
+}
+
+
+    .col-lg-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+float:left;
+margin-top: 1%;
+}
+
+   .element {
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.tf {font-size: 24px;}
