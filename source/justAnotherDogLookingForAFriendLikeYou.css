@@ -25,7 +25,11 @@
     border: 1px solid white;
 }
 
-.ol {margin-bottom: 1%;}
+.ol {margin-bottom: .5%;}
+
+.carousel-indicators {
+    bottom: 0;
+}
 
     .col-lg-4 {
     -webkit-box-flex: 0;
