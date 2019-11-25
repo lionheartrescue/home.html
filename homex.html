@@ -226,14 +226,13 @@
 
    <script src="./source/thisIsYourNewBestFriend.js"></script>
  <link rel="stylesheet" href="./source/justAnotherDogLookingForAFriendLikeYou.css">
-<!-- 
-  //.carousel-linked-nav > li > a -->
+
+  
  <script>
-  var that = ".carousel-linked-nav > li > a"
-$('#first').click(function () {
+$('.carousel-linked-nav > li > a').click(function () {
 
     // grab href, remove pound sign, convert to number
-    var item = Number($(that).attr('href').substring(1));
+    var item = Number($(this).attr('href').substring(1));
 
     // slide to number -1 (account for zero indexing)
     $('#myCarousel').carousel(item - 1);
