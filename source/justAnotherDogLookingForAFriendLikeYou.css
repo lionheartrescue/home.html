@@ -48,3 +48,9 @@ margin-top: 1%;
   border:none;
   border-radius: 0%;
     margin-bottom:0%;}
+
+    .capt{  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;}
